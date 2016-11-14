@@ -7,6 +7,7 @@ List *push(List *l, int value){
     List * aux = (List *) malloc (sizeof(List));
     aux->value = value;
     aux->next = l;
+    return aux;
 }
 List *remov(List *l, int value){
     List *aux, *prev=NULL;
